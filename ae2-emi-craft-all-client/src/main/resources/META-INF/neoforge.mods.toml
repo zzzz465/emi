@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mixins]]
+config = "ae2_emi_craft_all_client.mixins.json"
+
+[[mods]]
+modId = "ae2_emi_craft_all_client"
+version = "0.1.0"
+displayName = "AE2 EMI Craft All Client"
+authors = "jungooji"
+description = '''
+Client-side helper for EMI craft-all actions in AE2 crafting terminals.
+'''
+
+[[dependencies.ae2_emi_craft_all_client]]
+modId = "neoforge"
+type = "REQUIRED"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.ae2_emi_craft_all_client]]
+modId = "ae2"
+type = "REQUIRED"
+versionRange = "[19.2,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.ae2_emi_craft_all_client]]
+modId = "emi"
+type = "REQUIRED"
+versionRange = "[1.1.22,)"
+ordering = "AFTER"
+side = "CLIENT"
